@@ -31,23 +31,7 @@ export const InputValue = (props) => {
   /*Function to securely store the value inputs for the profiles */
   const [pick, onChangePick] = useState('');
   
-  return(
-    
-    <View style={styles.segment}>
-          <View style={[styles.input, styles.neuInputSecondShadow]}>
-          <TextInput	
-          style={styles.input}
-          placeholder={props.title}	
-          onChangeText={pick => {
-            onChangePick(pick);
-            savePick(props.title, pick).then(() => {
-              return});
-          }}
-          value={pick}
-          />
-          </View>
-    </View>
-  )
+  return 1
 }
 
 
@@ -72,30 +56,7 @@ export const NeuteredValue = () => {
             {label: 'Neutered', value: 'neutered'},
             {label: 'Intact', value: 'intact'}
         ]);
-    return(
-        <View style={styles.segment}>
-            <View style={styles.neuInputSecondShadow}>
-              <DropDownPicker
-                open={open}
-                value={value}
-                items={items}
-                setOpen={setOpen}
-                setValue={setValue}
-                setItems={setItems}
-                labelStyle={styles.dropLabelStyle}
-                style={{
-                    backgroundColor: '#f0f0f0',
-                  }}
-                textStyle={styles.dropTextStyle}
-                maxHeight={500}
-                onChangeValue={(value) => {
-                    savePick('Neutered', value);
-                  }}
-                placeholder='Neutered/Intact'
-                />
-            </View>
-        </View>
-      )
+    return 1
 }
 
 export const ActivityValue = () => {
@@ -106,30 +67,7 @@ export const ActivityValue = () => {
             {label: 'Indoor', value: 'indoor'},
             {label: 'Outdoor', value: 'outdoor'}
         ]);
-    return(
-        <View style={styles.segment}>
-            <View style={[styles.neuInputSecondShadow]}>
-              <DropDownPicker
-                open={open}
-                value={value}
-                items={items}
-                setOpen={setOpen}
-                setValue={setValue}
-                setItems={setItems}
-                labelStyle={styles.dropLabelStyle}
-                style={{
-                    backgroundColor: '#f0f0f0',
-                  }}
-                textStyle={styles.dropTextStyle}
-                maxHeight={500}
-                onChangeValue={(value) => {
-                    savePick('Activity', value);
-                  }}
-                placeholder='Activity'
-                />
-            </View>
-        </View>
-      )
+    return 1
 }
 
 export const LifeStage = () => {
@@ -141,30 +79,7 @@ export const LifeStage = () => {
             {label: 'Adult', value: 'adult'},
             {label: 'Senior', value: 'senior'}
         ]);
-    return(
-        <View style={styles.segment}>
-            <View style={[styles.neuInputSecondShadow]}>
-              <DropDownPicker
-                open={open}
-                value={value}
-                items={items}
-                setOpen={setOpen}
-                setValue={setValue}
-                setItems={setItems}
-                labelStyle={styles.dropLabelStyle}
-                style={{
-                    backgroundColor: '#f0f0f0',
-                  }}
-                textStyle={styles.dropTextStyle}
-                maxHeight={500}
-                onChangeValue={(value) => {
-                    savePick('LifeStage', value);
-                  }}
-                placeholder='Life Stage'
-                />
-            </View>
-        </View>
-      )
+    return 1
 }
 
 export const BodyCondition = () => {
@@ -176,28 +91,5 @@ export const BodyCondition = () => {
             {label: 'Ideal', value: 'ideal'},
             {label: 'Overweight', value: 'over'}
         ]);
-    return(
-        <View style={styles.segment}>
-            <View style={[styles.neuInputSecondShadow]}>
-              <DropDownPicker
-                open={open}
-                value={value}
-                items={items}
-                setOpen={setOpen}
-                setValue={setValue}
-                setItems={setItems}
-                labelStyle={styles.dropLabelStyle}
-                style={{
-                    backgroundColor: '#f0f0f0',
-                  }}
-                textStyle={styles.dropTextStyle}
-                maxHeight={500}
-                onChangeValue={(value) => {
-                    savePick('BodyCondition', value);
-                  }}
-                placeholder='Body Condition'
-                />
-            </View>
-        </View>
-      )
+    return 1
 }
